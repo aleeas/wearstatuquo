@@ -1,0 +1,22 @@
+REVISION SAHAL
+————————————
+Index
+
+- waktu masuk index, atas nav bar hide all jadi  full screen (done)
+- paling bawah setelah discover sales kasih space lagi (done) (atas bawah 70px)
+- logo payment getaway di footer kebesaran (done)
+
+Brand page
+- nav notification paling atas di hide setelah 8 detik masuk ke page (done)
+
+Features
+- waktu quick preview product, ‘add to cart’ font kebesaran (done)
+- quantity perlu gak? (need confirm)
+
+Cart
+- alignment kiri logo, cart, product berantakan(done)
+
+Payment
+- orderlist + payment jangan di hide view
+- tambahin icon transfer, midtrans, virtual acc
+(Belom oke)(g ada assetsnya)
