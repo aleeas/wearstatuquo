@@ -27,7 +27,16 @@
     <div class="header-top">GET 10% DISCOUNT FOR YOUR FIRST PURCHASE! #WEARSTATUQUO</div>
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky header-navigation">
         <div class="container">
+            <button class="navbar-toggler btn btn-outline-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <a class="navbar-brand" href="#"><img src="assets/images/logo.png" height="20"></a>
+            <div class="icon-right d-lg-none">
+                    <a href="javascript:void(0)"><img src="assets/images/icon-search.png" height="20"></a>
+                    <a href="javascript:void(0)"><img src="assets/images/icon-shopping-bag.png" height="20"><span class="badge">9</span></a>
+    
+                </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <nav id="main-nav" class="mr-auto">
                     <ul id="main-menu" class="sm sm-simple header-navigation">
@@ -86,14 +95,12 @@
                     </ul>
                 </nav>
             </div>
-            <div class="icon-right">
-                <a href="javascript:void(0)"><img src="assets/images/icon-search.png" height="20"></a>
-                <a href="javascript:void(0)"><img src="assets/images/icon-profile.png" height="20"></a>
-                <a href="javascript:void(0)"><img src="assets/images/icon-shopping-bag.png" height="20"><span class="badge badge-primary">9</span></a>
-                <button class="navbar-toggler btn btn-outline-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <div class="icon-right d-none d-lg-block">
+                    <a href="javascript:void(0)"><img src="assets/images/icon-search.png" height="20"></a>
+                    <a href="javascript:void(0)"><img src="assets/images/icon-profile.png" height="20"></a>
+                    <a href="javascript:void(0)"><img src="assets/images/icon-shopping-bag.png" height="20">
+                        <span class="badge">9</span></a>
+    
             </div>
 
         </div>
@@ -123,12 +130,23 @@
                     </div>
                 </div>
                 <div class="col-lg-8 col-xs-12 col-md-8">
-                    <div class="popupTitle">
+                    <div class="popupTitle mb-4">
                         <h6>WEARSTATUQUO - DRESS</h6>
-                        <h3>Isle of Delos Dress</h3>
+                        <h4>Isle of Delos Dress</h4>
                         <h5>IDR 515,000</h5>
                     </div>
-                    <hr>
+                    <div class="descProductList d-lg-none d-block">
+                            <p>DESCRIPTION / SIZE GUIDE</p>
+                            Everything simple with some twists. Looking from the front side, the dress features a
+                            simple V neck with little spaghetti straps and stunning side slits. It’s the back’s
+                            string details that steal the attention.
+                            <ul>
+                                <li>Rayon</li>
+                                <li>Runs true to size</li>
+                                <li>Model is wearing 00/Small</li>
+                                <li>Made in Indonesia</li>
+                            </ul>
+                        </div>
                     <div class="form-group row prodListDetail">
                         <div class="col-lg-6 col-md-6 col-xs-12">
                             <div class="cs-select form-inline">
@@ -160,7 +178,7 @@
                             <form class="form-inline mt-3 mb-3" action="cart.html">
 
 
-                                <div class="input-group">
+                                <div class="input-group addBtnCart">
                                     <button type="submit" class="btn btn-cart btn-block">
                                         ADD TO CART</button>
                                 </div>
@@ -174,8 +192,9 @@
                         </div>
 
                         <div class="col-lg-6 col-md-6 col-xs-12">
-                            <p><strong>DESCRIPTION / SIZE GUIDE</strong></p>
-                            <div class="descProductList">
+                            
+                            <div class="descProductList d-lg-block d-none">
+                                <p><strong>DESCRIPTION / SIZE GUIDE</strong></p>
                                 Everything simple with some twists. Looking from the front side, the dress features a
                                 simple V neck with little spaghetti straps and stunning side slits. It’s the back’s
                                 string details that steal the attention.
@@ -216,7 +235,7 @@
 
     <section class="section">
         <div class="container">
-            <h4 class="text-center"><strong>Other Candies You Might Fancy</strong></h4>
+            <h4 class="text-center othersCandies"><strong>Other Candies You Might Fancy</strong></h4>
             <ul class="fancyCandies">
                 <li class="fancy-item">
                     <div class="fancy-image"><img src="assets/images/fancy/Wearstatuquo-season18-vintage-fleur-dress-IMG_8246.jpg"></div>

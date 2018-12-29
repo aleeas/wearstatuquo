@@ -29,7 +29,16 @@
     <div class="header-top">GET 10% DISCOUNT FOR YOUR FIRST PURCHASE! #WEARSTATUQUO</div>
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky header-navigation">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/images/logo.png" height="20"></a>
+            <button class="navbar-toggler btn btn-outline-light f-12" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="assets/images/logo.png" height="15"></a>
+            <div class="icon-right d-lg-none">
+                    <a href="javascript:void(0)"><img src="assets/images/icon-search.png" height="20"></a>
+                    <a href="javascript:void(0)"><img src="assets/images/icon-shopping-bag.png" height="20"><span class="badge">9</span></a>
+    
+                </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <nav id="main-nav" class="mr-auto">
                     <ul id="main-menu" class="sm sm-simple header-navigation">
@@ -88,21 +97,83 @@
                     </ul>
                 </nav>
             </div>
-            <div class="icon-right">
-                <a href="javascript:void(0)"><img src="assets/images/icon-search.png" height="20"></a>
-                <a href="javascript:void(0)"><img src="assets/images/icon-profile.png" height="20"></a>
-                <a href="javascript:void(0)"><img src="assets/images/icon-shopping-bag.png" height="20"><span class="badge badge-primary">9</span></a>
-                <button class="navbar-toggler btn btn-outline-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <div class="icon-right d-none d-lg-block">
+                    <a href="javascript:void(0)"><img src="assets/images/icon-search.png" height="20"></a>
+                    <a href="javascript:void(0)"><img src="assets/images/icon-profile.png" height="20"></a>
+                    <a href="javascript:void(0)"><img src="assets/images/icon-shopping-bag.png" height="20">
+                        <span class="badge">9</span></a>
+    
             </div>
 
         </div>
     </nav>
+    <!-- filter mobile -->
+
+    <div id="filterMenu" style="display:none">
+            <div class="bd-highlight d-lg-none mt-3" id="accordion-category">               
+                <div class="listFilterMenu"> <strong>CATEGORY</strong> <button class="btn btn-link" data-toggle="collapse"
+                        data-target="#collapseCategory" aria-expanded="true" aria-controls="collapseCategory"> 
+                        <i class="fa" aria-hidden="true"></i></button>
+                </div>
+                <div class="mb-3 collapse show text-center" id="collapseCategory" data-parent="#accordion-category">
+                        <div><a class="nav-link-cat" href="javascript:void(0)">Dresses</a></div>
+                        <div><a class="nav-link-cat" href="javascript:void(0)">Tops</a></div>
+                        <div><a class="nav-link-cat" href="javascript:void(0)">Bottoms</a></div>
+                        <div><a class="nav-link-cat" href="javascript:void(0)">Outerwears</a></div>
+                        <div><a class="nav-link-cat" href="javascript:void(0)">Sleepwears</a></div>
+                        <div><a class="nav-link-cat" href="javascript:void(0)">Swimwears</a></div>
+                        <div><a class="nav-link-cat" href="javascript:void(0)">Accessories</a></div>
+                        <div><a class="nav-link-cat" href="javascript:void(0)">Beauty</a></div>
+                        <div><a class="nav-link-cat" href="javascript:void(0)">Footwears</a></div>
+                </div>
+            </div>
+
+            <div class="bd-highlight d-lg-none mt-3" id="accordion-brand">               
+                    <div class="listFilterMenu"> <strong>BRAND</strong> <button class="btn btn-link" data-toggle="collapse"
+                            data-target="#collapseBrand" aria-expanded="false" aria-controls="collapseBrand"> 
+                            <i class="fa" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="mb-3 collapse text-center" id="collapseBrand" data-parent="#accordion-brand">
+                        <p>Brand Content Here</p>
+                    </div>
+            </div>
+
+            <div class="bd-highlight d-lg-none mt-3" id="accordion-size">               
+                    <div class="listFilterMenu"> <strong>SIZE</strong> <button class="btn btn-link" data-toggle="collapse"
+                            data-target="#collapseSize" aria-expanded="false" aria-controls="collapseSize"> 
+                            <i class="fa" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="mb-3 collapse text-center" id="collapseSize" data-parent="#accordion-size">
+                            <p>Size Content Here</p>
+                    </div>
+            </div>
+
+
+            <div class="bd-highlight d-lg-none mt-3" id="accordion-color">               
+                    <div class="listFilterMenu"> <strong>COLOR</strong> <button class="btn btn-link" data-toggle="collapse"
+                            data-target="#collapseColor" aria-expanded="false" aria-controls="collapseColor"> 
+                            <i class="fa" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="mb-3 collapse text-center" id="collapseColor" data-parent="#accordion-color">
+                            <p>Color Content Here</p>
+                    </div>
+            </div>
+
+
+            <div class="bd-highlight d-lg-none mt-3" id="accordion-price">               
+                    <div class="listFilterMenu"> <strong>PRICE SET</strong> <button class="btn btn-link" data-toggle="collapse"
+                            data-target="#collapsePrice" aria-expanded="false" aria-controls="collapsePrice"> 
+                            <i class="fa" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="mb-3 collapse text-center" id="collapsePrice" data-parent="#accordion-price">
+                            <p>Price Set Content Here</p>
+                    </div>
+            </div>
+            <div class="p-2"><a href="javascript:void(0)" class="cnfirm-btn">APPLY</a></div>
+    </div>
     <section class="section">
         <div class="container">
-            <div class="btn-group" role="group" aria-label="Basic example">
+            <div class="btn-group d-lg-block d-none" role="group" aria-label="Basic example">
                 <select class="custom-select filter-select custom-select-sm">
                     <option selected>SIZE</option>
                     <option value="1">One</option>
@@ -135,7 +206,7 @@
                 </select>
             </div>
 
-            <div class="slide-category">
+            <div class="slide-category d-lg-block d-none">
                 <div>
                     <div class="checkBoxImage"><label><img src="assets/images/subcategories/007-peplum-top.png" alt="Checkbox Image"
                                 class="img-check">
@@ -174,8 +245,8 @@
                 </div>
             </div>
 
-            <div id="cbp-vm" class="cbp-vm-switcher cbp-vm-view-grid">
-                <div class="cbp-vm-tags">
+            <div id="cbp-vm" class="cbp-vm-switcher cbp-vm-view-grid ">
+                <div class="cbp-vm-tags d-lg-block d-none">
                     <div class="alert alert-secondary alert-dismissible fade show" role="alert">
                         Tops
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -220,7 +291,7 @@
 
                     <a href="javascript:void(0)" class="clear-filter">Clear Filter</a>
                 </div>
-                <div class="cbp-vm-options">
+                <div class="cbp-vm-options d-lg-block d-none">
                     <a href="#" class="cbp-vm-icon cbp-vm-grid cbp-vm-selected" data-view="cbp-vm-view-grid"></a>
                     <a href="#" class="cbp-vm-icon cbp-vm-list" data-view="cbp-vm-view-list"></a>
                 </div>
@@ -229,52 +300,74 @@
                     <li>
                         <span class="ribbon-badge editors">EDITOR’S PICKS</span>
                         <div class="cbp-vm-image">
-                            <div class="icons-active" style="bottom:100px;">
-                                <div class="pull-left viewsListIcons">
-                                    <a href="products-list.html">
-                                        <img src="assets/images/gridview/view.jpg">
-                                    </a>
+                            <div class="d-lg-block d-none">
+                                <div class="icons-active" style="bottom:100px;">
+                                    <div class="pull-left viewsListIcons">
+                                        <a href="products-list.html">
+                                            <img src="assets/images/gridview/view.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="pull-right likesListIcons">
+                                        <a href="javascript:void(0)">
+                                            <img src="assets/images/gridview/heart1.jpg">
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="pull-right likesListIcons">
-                                    <a href="javascript:void(0)">
-                                        <img src="assets/images/gridview/heart1.jpg">
-                                    </a>
-                                </div>
+                            </div>
+                            <div class="d-lg-none d-block icon-hearts">
+                                <i class="fa fa-heart-o"></i>
                             </div>
                             <img src="assets/images/gridview/939.jpg">
                         </div>
-                        <h6 class="cbp-vm-title">MAJA STUDIO</h6>
-                        <div class="cbp-vm-details">
-                            Lana Top
+                        <div class="mr-products">
+                            <h6 class="cbp-vm-title">MAJA STUDIO</h6>
+                            <div class="cbp-vm-details">
+                                Lana Top
+                            </div>
+                            <div class="cbp-vm-price">IDR 289.000</div>
                         </div>
-                        <div class="cbp-vm-price">IDR 289.000</div>
                     </li>
                     <li>
                         <span class="ribbon-badge editors">Best Seller</span>
+                        <div class="d-lg-none d-block icon-hearts">
+                                <i class="fa fa-heart-o"></i>
+                            </div>
                         <div class="cbp-vm-image"><img src="assets/images/gridview/939.jpg"></div>
-                        <h6 class="cbp-vm-title">MAJA STUDIO</h6>
-                        <div class="cbp-vm-details">
-                            Karli Color Block Top
+                        <div class="mr-products">
+                            <h6 class="cbp-vm-title">MAJA STUDIO</h6>
+                            <div class="cbp-vm-details">
+                                Karli Color Block Top
+                            </div>
+                            <div class="cbp-vm-price">IDR 229.000</div>
                         </div>
-                        <div class="cbp-vm-price">IDR 229.000</div>
                     </li>
                     <li>
                         <span class="ribbon-badge editors">Trendy</span>
+                        <div class="d-lg-none d-block icon-hearts">
+                                <i class="fa fa-heart-o"></i>
+                            </div>
                         <div class="cbp-vm-image"><img src="assets/images/gridview/940.jpg"></div>
-                        <h6 class="cbp-vm-title">MAJA STUDIO</h6>
-                        <div class="cbp-vm-details">
-                            Rue Bow Shoulder Top
+                        <div class="mr-products">
+                            <h6 class="cbp-vm-title">MAJA STUDIO</h6>
+                            <div class="cbp-vm-details">
+                                Rue Bow Shoulder Top
+                            </div>
+                            <div class="cbp-vm-price">IDR 279.000</div>
                         </div>
-                        <div class="cbp-vm-price">IDR 279.000</div>
                     </li>
                     <li>
                         <span class="ribbon-badge backstock">BACK IN STOCK</span>
+                        <div class="d-lg-none d-block icon-hearts">
+                                <i class="fa fa-heart-o"></i>
+                            </div>
                         <div class="cbp-vm-image"><img src="assets/images/gridview/583.jpg"></div>
-                        <h6 class="cbp-vm-title">MAJA STUDIO</h6>
-                        <div class="cbp-vm-details">
-                            Isa Color Block Top
+                        <div class="mr-products">
+                            <h6 class="cbp-vm-title">MAJA STUDIO</h6>
+                            <div class="cbp-vm-details">
+                                Isa Color Block Top
+                            </div>
+                            <div class="cbp-vm-price">IDR 299.000</div>
                         </div>
-                        <div class="cbp-vm-price">IDR 299.000</div>
                     </li>
 
 
@@ -284,13 +377,20 @@
     </section>
 
 
-
+    <nav class="navbar fixed-bottom navbar-light bg-light border d-block d-lg-none p-0">
+            <div class="d-flex justify-content-between text-center">
+                <div class="flex-fill border-right"><a href="javascript:void(0)" class="text-muted" id="filter-trigger">
+                    <i class="fa fa-filter fa-lg"></i><br> <span class="f-12">FILTER</span></a></div>
+                <div class="flex-fill"><a href="javascript:void(0)" class="text-muted"> 
+                    <i class="fa fa-align-left"></i><br> <span class="f-12">SORT</span></a></div>
+            </div>
+        </nav>
 
 
     <footer>
         <div class="container">
             <div class="form-group ">
-                <div class="d-flex d-block-sm w-100 justify-content-lg-between mb-5">
+                <div class="d-flex d-block-sm w-100 justify-content-lg-between mb-3">
                     <div class="bd-highlight d-none d-lg-block">
                         <ul class="navi-foot">
                             <li><a href="javascript:void(0)">CONFIRM PAYMENT</a></li>
@@ -329,7 +429,7 @@
                         <div class="row form-group flex-fill collapse show" id="collapseTwo" data-parent="#accordion2">
 
                             <div class="form-group foot-menu bd-highlight">
-                                <div class="navFooterTitle mb-3">Editor's Picks</div>
+                                <div class="navFooterTitle mb-2">Editor's Picks</div>
                                 <ul class="nav flex-column">
                                     <li class="nav-item"><a class="nav-link-footer" href="javascript:void(0)">Cheap
                                             Thrills</a></li>
@@ -343,7 +443,7 @@
                             </div>
 
                             <div class="form-group foot-menu bd-highlight">
-                                <div class="navFooterTitle mb-3">Got To Know Us</div>
+                                <div class="navFooterTitle mb-2">Got To Know Us</div>
                                 <ul class="nav flex-column">
                                     <li class="nav-item"><a class="nav-link-footer" href="about.html">About Us</a></li>
                                     <li class="nav-item"><a class="nav-link-footer" href="javascript:void(0)">Careers</a></li>
@@ -353,7 +453,7 @@
                             </div>
 
                             <div class="form-group foot-menu bd-highlight">
-                                <div class="navFooterTitle mb-3">Support</div>
+                                <div class="navFooterTitle mb-2">Support</div>
                                 <ul class="nav flex-column">
                                     <li class="nav-item"><a class="nav-link-footer" href="javascript:void(0)">Contact
                                             Us</a></li>
@@ -372,7 +472,7 @@
 
                 <div class="form-group d-block-sm d-flex w-100 justify-content-between align-items-center">
                     <div class="d-lg-none">
-                        <p class="text-muted text-center">FOLLOW US</p>
+                        <p class="text-muted text-center mb-1 f-11">FOLLOW US</p>
                         <ul class="sosmed">
                             <li class="sosmed-item">
                                 <a class="sosmed-link" href="#"><i class="fa fa-facebook-square fa-lg"></i></a>
@@ -562,6 +662,10 @@
 
         $(".clear-filter").click(function () {
             $(".cbp-vm-tags").hide();
+        });
+
+        $("#filter-trigger").click(function (){
+            $("#filterMenu").toggle();
         });
 
     </script>

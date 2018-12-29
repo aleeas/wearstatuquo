@@ -4,12 +4,16 @@ body {
 .f-12 {
   font-size: 12px;
 }
+.f-11 {
+  font-size: 11px;
+}
 .header-top {
   text-align: center;
   border-bottom: 2px solid #ebebeb;
   padding: 10px;
-  font-size: 13px;
+  font-size: 8px;
   color: #999;
+  letter-spacing: 2px;
 }
 .navbar.header-navigation,
 .header-navigation {
@@ -21,6 +25,8 @@ body {
 .sm.sm-simple.header-navigation a {
   height: 100%;
   display: flex;
+  font-size: 10px;
+  letter-spacing: 1px;
   align-items: center;
   align-content: center;
   border-bottom: 2px solid transparent;
@@ -35,7 +41,7 @@ body {
 .nav-link {
   margin: 0px 14px;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 11px;
   color: #000 !important;
   padding-bottom: 10px;
 }
@@ -44,14 +50,15 @@ body {
   margin: 25px 40px;
   padding: 0;
   text-transform: capitalize;
-  font-size: 12px;
+  font-size: 11px;
   color: #6c757d;
   padding-bottom: 10px;
 }
 .navFooterTitle {
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 11px;
+  font-weight: 400;
   margin: 0 40px;
+  letter-spacing: 1px;
 }
 .btn-subscribe {
   background: #e9c0a3;
@@ -66,6 +73,9 @@ body {
 .icon-right a {
   color: #999;
   margin: 0 7px;
+}
+.ftr-res{
+  height: 180px;
 }
 .carousel-indicators li {
   position: relative;
@@ -146,8 +156,8 @@ section.section .featuredProducts h6,
 .blogImage img {
   display: block;
   position: relative;
-  min-height: 300px;
-  max-height: 300px;
+  min-height: 350px;
+  max-height: 350px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -238,6 +248,7 @@ footer img.payment-logo {
 }
 .imageCaption h6 {
   font-weight: bold;
+  letter-spacing: 3px;
 }
 footer h3 {
   font-weight: lighter;
@@ -295,7 +306,7 @@ footer iframe {
   top: 0;
 }
 .blogImage .overlay {
-  padding: 60px 20px;
+  padding: 100px 20px;
 }
 .blogImage .overlay {
   width: 100%;
@@ -611,7 +622,7 @@ h5.titleFG:after {
 }
 
 .checkBoxImage {
-  margin: 0 0px 0 15px;
+  margin: 0 0px 0 10px;
 }
 .inlineGroup {
   margin: 0 0 0 5px;
@@ -739,20 +750,35 @@ h5.titleFG:after {
 }
 
 .custom-select.filter-select {
-  min-width: 221px;
+  min-width: 218px;
   border-radius: 0;
   border-color: #e9c0a3;
-  font-size: 11px;
+  font-size: 10px;
   margin-bottom: 20px;
   font-weight: bold;
   height: 40px;
+  width: auto;
 }
-
+.listFilterMenu{
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
+    margin: 5px 0 10px;
+    position: relative;
+    padding: 0 0 5px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #d0d0d0;
+}
+.nav-link-cat{
+  color: #696969;
+  font-size: 12px;
+}
 .slide-category span {
   position: relative;
   float: left;
   padding: 10px 0;
   margin: 0 5px;
+  font-size: 11px;
   text-align: left;
 }
 .slide-category .checkBoxImage label {
@@ -770,6 +796,7 @@ h5.titleFG:after {
   border: 1px solid #e9c0a3;
   margin-bottom: 20px;
   max-height: 60px;
+  min-height: 60px;
 }
 
 .slide-category .slick-prev,
@@ -825,15 +852,21 @@ h5.titleFG:after {
 }
 .cbp-vm-tags .alert {
   width: auto;
-  display: inline-block;
-  font-size: 12px;
-  padding: 10px 30px 10px 10px;
+  display: inline-block;  
+  font-size: 10px;
+  padding: 7px 30px 7px 10px;
   text-align: left;
 }
-
+.othersCandies {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.form-inline .input-group.addBtnCart{
+  width: 70%;
+}
 .cbp-vm-tags .alert-dismissible .close {
   position: absolute;
-  top: -4px;
+  top: -8px;
   right: -10px;
   padding: 0.75rem 1.25rem;
   color: inherit;
@@ -1232,9 +1265,10 @@ input.circle::-ms-input-placeholder {
   }
   input.search-icons {
     background: url(../images/brand/icons8-search-100.png) no-repeat;
-    background-size: 34px;
-    background-position: 99% 0;
+    background-size: 25px;
+    background-position: 99% 2px;
     border-radius: 0;
+    font-size: 12px;
   }
   .prodListDetail .custom-select {
     border-radius: 0;
@@ -1246,15 +1280,25 @@ input.circle::-ms-input-placeholder {
   .nav-link-list {
     margin: 0 8px;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 9px;
     color: #000 !important;
     padding-bottom: 10px;
   }
+  .ribbon-badge {
+    position: absolute;
+    padding: 3px 5px;
+    font-size: 8px;
+    left: -7px;
+    top: 7px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
   .grouping-brands {
     margin: 25px 0 25px;
   }
   .grouping-brands .nav-link {
     margin: 0;
+    font-size: 10px;
   }
   .navbar.header-navigation,
   .header-navigation {
@@ -1299,11 +1343,27 @@ input.circle::-ms-input-placeholder {
   .cbp-vm-view-grid ul {
     margin-bottom: 20px;
   }
+  .icon-hearts{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: #a9a9a9;
+  }
+  .cbp-vm-view-grid .cbp-vm-title {
+    font-size: 8px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #c0c0c0;
+}
   .cbp-vm-view-grid .cbp-vm-details {
     max-width: 300px;
     margin: 0 auto;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 10px;
+  }
+  .cbp-vm-view-grid .cbp-vm-price {
+    margin: 0;
+    font-size: 0.6em;
   }
   .proceed {
     margin: 10px;
@@ -1487,8 +1547,33 @@ input.circle::-ms-input-placeholder {
     margin-bottom: 20px;
   }
   .slick-slide {
-    height: 247px !important;
+    height: auto !important;
   }
+  .popupTitle {
+      margin: 0;
+  }
+  .popupTitle h6{
+    font-size: 9px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  .popupTitle h4{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+  .popupTitle h5 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #8e8e8e;
+}
+.form-inline .input-group.addBtnCart {
+  width: 100%;
+}
+
+.mr-products{
+  margin: 15px 0;
+  letter-spacing: 1px;
+}
   .slick-slide .image-slide {
     height: 100%;
   }
@@ -1559,8 +1644,8 @@ input.circle::-ms-input-placeholder {
   }
   .words-mbl {
     background: rgba(255, 255, 255, 0.5);
-    padding: 12px;
-    top: 40%;
+    padding: 30px;
+    top: 37%;
     font-size: 10px;
   }
   .prodsFeat {
@@ -1698,7 +1783,6 @@ input.circle::-ms-input-placeholder {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    height: 230px !important;
   }
   .onMedSizeGal {
     height: 232px;
@@ -1836,14 +1920,20 @@ input.circle::-ms-input-placeholder {
   }
   .fancyCandies .fancy-item {
     float: left;
-    width: 48%;
-    margin: 0 5px 10px 0;
-  }
-  .fancyCandies .fancy-details {
-    font-weight: 700;
-    font-size: 13px;
-  }
-
+    width: 44%;
+    margin: 0 9px 10px 9px;
+}
+.fancyCandies .fancy-details {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.fancyCandies .fancy-title {
+  font-size: 8px;
+  margin: 0;
+  letter-spacing: 1px;
+  color: #8e8e8e;
+}
   .sosmedShare {
     position: relative;
     bottom: -22px;
